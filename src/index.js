@@ -5,9 +5,7 @@ import CalculatorContainer from './containers/CalculatorContainer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    +  <CalculatorContainer />,
-  </React.StrictMode>,
+  <CalculatorContainer />,
   document.getElementById('root')
 );
 
