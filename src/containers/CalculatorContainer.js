@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import * as actions from '../actions';
 import NumBtn from '../components/NumBtn';
 import PlusBtn from '../components/PlusBtn';
 import Result from '../components/Result';
 
 class CalculatorContainer extends Component {
 	render() {
+		const { calculator, actions } = this.props;
 		return(
 			<div>
 				<div>
