@@ -39,4 +39,14 @@ class CalculatorContainer extends Component {
 	}
 }
 
-export default CalculatorContainer;
+const mapState = (state, ownProps) => ({
+	calculator: state.calculator
+});
+
+function mapDispatch(dispatch) {
+	return {
+		actions: bindActionCreators(actions, dispatch),
+	};
+}
+
+export default connect(mapState, mapDispatch)(CalculatorContainer);
