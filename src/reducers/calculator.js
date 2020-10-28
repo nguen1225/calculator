@@ -17,7 +17,7 @@ const calculator = (state = initialAppState, action) => {
 		return {
 			...state,
 			inputValue: 0,
-			resultVslue: state.resultValue + state.inputValue,
+			resultValue: state.resultValue + state.inputValue,
 			showingResult: true,
 		};
 	} else {
